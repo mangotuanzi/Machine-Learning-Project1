@@ -138,46 +138,10 @@ spl.set_xlabel('Number of components')
 spl.legend([b[0] for b in bars], cv_types)
 
 
-# In[ ]:
 
 
-# # data set 1: 500 samples each cluster
-# # Generate random sample, two components
-# n_samples = 500
-# np.random.seed(0)
-# C = np.array([[0., -0.1], [1.7, .4]])
-# X = np.r_[np.dot(np.random.randn(n_samples, 2), C),
-#           .7 * np.random.randn(n_samples, 2) + np.array([-6, 3])]
-# equas to 
-# X = np.concatenate([np.dot(np.random.randn(n_samples, 2), C),
-#           .7 * np.random.randn(n_samples, 2) + np.array([-6, 3])], axis=0)
 
 
-# In[ ]:
-
-
-# # data set 2: 1000-samples each cluster, 2-components, 2-dim
-# # Generate random sample, two components
-# n_samples = 1000
-# np.random.seed(0)
-# C = np.array([[0., 1], [1.7, .4]])
-# X = np.r_[np.dot(np.random.randn(n_samples, 2), C),
-#           .7 * np.random.randn(n_samples, 2) + np.array([-6, 3])]
-
-
-# In[ ]:
-
-
-# data set 2: 200-samples each cluster, 3-components, 2-dim
-# Generate random sample, two components
-# n_samples = 500
-# np.random.seed(0)
-# C = np.array([[0., 1], [1.7, .4]])
-# X = np.r_[np.dot(np.random.randn(n_samples, 2), C),
-#           .7 * np.random.randn(n_samples, 2) + np.array([-6, 3]),
-#           .5 * np.random.randn(n_samples, 2) + np.array([-13, 1]),
-#           .5 * np.dot(np.random.randn(n_samples, 2), C) + np.array([6, 3]),
-#           .7 * np.dot(np.random.randn(n_samples, 2), C) + np.array([-8, -3])]
 
 
 # In[ ]:
